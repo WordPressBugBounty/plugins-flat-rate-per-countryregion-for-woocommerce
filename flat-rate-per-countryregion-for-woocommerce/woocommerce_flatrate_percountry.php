@@ -1,16 +1,18 @@
 <?php
 /**
- * Plugin Name: Flat Rate per State/Country/Region for WooCommerce
- * Plugin URI: https://www.webdados.pt/wordpress/plugins/flat-rate-per-countryregion-woocommerce-wordpress/
- * Description: This plugin allows you to set a flat delivery rate per States, Countries or World Regions (and a fallback "Rest of the World" rate) on WooCommerce.
- * Version: 2.9
- * Author: PT Woo Plugins (by Webdados)
- * Author URI: https://ptwooplugins.com
- * Text Domain: flat-rate-per-countryregion-for-woocommerce
- * Domain Path: /lang
- * Requires at least: 5.0
- * Requires PHP: 7.0
- * WC tested up to: 8.4
+ * Plugin Name:       Flat Rate per State/Country/Region for WooCommerce
+ * Plugin URI:        https://www.webdados.pt/wordpress/plugins/flat-rate-per-countryregion-woocommerce-wordpress/
+ * Description:       This plugin allows you to set a flat delivery rate per States, Countries or World Regions (and a fallback "Rest of the World" rate) on WooCommerce.
+ * Version:           3.0
+ * Author:            Naked Cat Plugins (by Webdados)
+ * Author URI:        https://nakedcatplugins.com
+ * Text Domain:       flat-rate-per-countryregion-for-woocommerce
+ * Requires at least: 5.4
+ * Tested up to:      6.8
+ * Requires PHP:      7.0
+ * WC tested up to:   9.8
+ * Requires Plugins:  woocommerce
+ * License:           GPLv3
 **/
 
 /* WooCommerce CRUD not needed */
@@ -41,7 +43,7 @@ if (in_array('woocommerce/woocommerce.php', (array) get_option('active_plugins')
 			 * @return void
 			 */
 			public function __construct() {
-				$this->version            = '2.9';
+				$this->version            = '3.0';
 				$this->id                 = 'woocommerce_flatrate_percountry';
 				load_plugin_textdomain( 'flat-rate-per-countryregion-for-woocommerce' );
 				$this->method_title       = __('Flat Rate per State/Country/Region', 'flat-rate-per-countryregion-for-woocommerce');
@@ -803,7 +805,7 @@ if (in_array('woocommerce/woocommerce.php', (array) get_option('active_plugins')
 				<div id="wc_flatrate_wd">
 					<div id="wc_flatrate_wd_rightbar">
 						<h4><?php _e('Premium plugins', 'flat-rate-per-countryregion-for-woocommerce'); ?>:</h4>
-						<p><a href="https://ptwooplugins.com" title="<?php echo esc_attr(sprintf(__('Please contact %s', 'flat-rate-per-countryregion-for-woocommerce'), 'PT Woo Plugins')); ?>" target="_blank"><img src="<?php echo plugins_url('images/ptwooplugins.svg', __FILE__); ?>" width="200"/></a></p>
+						<p><a href="https://nakedcatplugins.com" title="<?php echo esc_attr(sprintf(__('Please contact %s', 'flat-rate-per-countryregion-for-woocommerce'), 'PT Woo Plugins')); ?>" target="_blank"><img src="<?php echo plugins_url('images/nakedcatplugins-plugins-for-wordpress.svg', __FILE__); ?>" width="200"/></a></p>
 						<h4><?php _e('Premium technical support or custom WordPress / WooCommerce development', 'flat-rate-per-countryregion-for-woocommerce'); ?>:</h4>
 						<p><a href="https://www.webdados.pt/contactos/" title="<?php echo esc_attr(sprintf(__('Please contact %s', 'flat-rate-per-countryregion-for-woocommerce'), 'Webdados')); ?>" target="_blank"><img src="<?php echo plugins_url('images/webdados.svg', __FILE__); ?>" width="200"/></a></p>
 						<h4><?php _e('Free technical support (limited)', 'flat-rate-per-countryregion-for-woocommerce'); ?>:</h4>

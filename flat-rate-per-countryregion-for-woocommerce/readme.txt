@@ -1,10 +1,12 @@
 === Flat Rate per State/Country/Region for WooCommerce ===
-Contributors: webdados, ptwooplugins
-Tags: woocommerce, shipping, delivery, ecommerce, e-commerce, country, countries, region, continent, continents, world, states, state, districts, webdados
-Requires at least: 5.0
-Tested up to: 6.4
+Contributors: nakedcatplugins, webdados
+Tags: woocommerce, shipping, delivery, ecommerce
+Requires at least: 5.4
+Tested up to: 6.8
 Requires PHP: 7.0
-Stable tag: 2.9
+Stable tag: 3.0
+License: GPLv3
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 This plugin allows you to set a flat delivery rate per States, Countries or World Regions on WooCommerce.
 
@@ -38,9 +40,12 @@ For each group you can choose either to apply the shipping fee for the whole ord
 
 Already know our other WooCommerce (premium) plugins?
 
-* [Shop as Client for WooCommerce](https://ptwooplugins.com/product/shop-as-client-for-woocommerce-pro-add-on/) - Quickly create orders on behalf of your customers
-* [Taxonomy/Term and Role based Discounts for WooCommerce](https://ptwooplugins.com/product/taxonomy-term-and-role-based-discounts-for-woocommerce-pro-add-on/) - Easily create bulk discount rules for products based on any taxonomy terms (built-in or custom)
-* [Simple WooCommerce Order Approval](https://ptwooplugins.com/product/simple-woocommerce-order-approval/) - The hassle-free solution for WooCommerce orders approval before payment
+* [Advanced Coupon Restrictions for WooCommerce](https://nakedcatplugins.com/product/advanced-coupon-restrictions-for-woocommerce/) - Create coupons for any Product Taxonomy, User details, and Order destination.
+* [Simple Checkout Fields Manager for WooCommerce](https://nakedcatplugins.com/product/simple-custom-fields-for-woocommerce-blocks-checkout/) - Add custom fields and manage (remove, make required or optional) core fields on the new WooCommerce Block-based Checkout
+* [Simple WooCommerce Order Approval](https://nakedcatplugins.com/product/simple-woocommerce-order-approval/) - The hassle-free solution for WooCommerce order approval before payment
+* [Taxonomy/Term and Role based Discounts for WooCommerce](https://nakedcatplugins.com/product/taxonomy-term-and-role-based-discounts-for-woocommerce-pro-add-on/) - Easily create bulk discount rules for products based on any taxonomy terms (built-in or custom)
+* [DPD / SEUR / Geopost Pickup and Lockers network for WooCommerce](https://nakedcatplugins.com/product/dpd-seur-geopost-pickup-and-lockers-network-for-woocommerce/) - Deliver your WooCommerce orders on the DPD and SEUR Pickup network of Parcelshops and Lockers in 21 European countries
+* [Auto Cancel WooCommerce On-hold Orders](https://nakedcatplugins.com/product/auto-cancel-woocommerce-on-hold-orders/) - Automatically cancel WooCommerce “On-hold” orders after a determined period of time.
 
 == Installation ==
 
@@ -78,13 +83,18 @@ This is a free plugin. It’s our way of giving back to the wonderful WordPress 
 
 There’s a support tab on the top of this page, where you can ask the community for help. We’ll try to keep an eye on the forums but we cannot promise to answer support tickets.
 
-If you reach us by email or any other direct contact means, we’ll assume you are in need of urgent, premium, and of course, paid-for support.
+If you reach us by email or any other direct contact means, we’ll assume you need, premium, and of course, paid-for support.
 
 = Where do I report security vulnerabilities found in this plugin? =  
  
 You can report any security bugs found in the source code of this plugin through the [Patchstack Vulnerability Disclosure Program](https://patchstack.com/database/vdp/flat-rate-per-countryregion-for-woocommerce). The Patchstack team will assist you with verification, CVE assignment and take care of notifying the developers of this plugin.
 
 == Changelog ==
+
+= 3.0 - 2025-04-18 =
+* [NEW] We are now called Naked Cat Plugins 😻
+* This is not a major release
+* [DEV] Tested with WordPress 6.8 and WooCommerce 9.8.1
 
 = 2.9 - 2023-12-12 =
 * Declare WooCommerce block-based Cart and Checkout compatibility
