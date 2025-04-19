@@ -3,7 +3,7 @@
  * Plugin Name:       Flat Rate per State/Country/Region for WooCommerce
  * Plugin URI:        https://www.webdados.pt/wordpress/plugins/flat-rate-per-countryregion-woocommerce-wordpress/
  * Description:       This plugin allows you to set a flat delivery rate per States, Countries or World Regions (and a fallback "Rest of the World" rate) on WooCommerce.
- * Version:           3.0
+ * Version:           3.1
  * Author:            Naked Cat Plugins (by Webdados)
  * Author URI:        https://nakedcatplugins.com
  * Text Domain:       flat-rate-per-countryregion-for-woocommerce
@@ -36,6 +36,15 @@ if (in_array('woocommerce/woocommerce.php', (array) get_option('active_plugins')
 		
 		if ( ! class_exists( 'WC_Flat_Rate_Per_Country_Region' ) ) {
 		class WC_Flat_Rate_Per_Country_Region extends WC_Shipping_Method {
+
+			// Vars
+			public $version;
+			public $wpml;
+			public $polylang;
+			public $shipping_classes;
+			public $regions;
+			public $regionslist;
+
 			/**
 			 * Constructor for your shipping class
 			 *
@@ -43,7 +52,7 @@ if (in_array('woocommerce/woocommerce.php', (array) get_option('active_plugins')
 			 * @return void
 			 */
 			public function __construct() {
-				$this->version            = '3.0';
+				$this->version            = '3.1';
 				$this->id                 = 'woocommerce_flatrate_percountry';
 				load_plugin_textdomain( 'flat-rate-per-countryregion-for-woocommerce' );
 				$this->method_title       = __('Flat Rate per State/Country/Region', 'flat-rate-per-countryregion-for-woocommerce');
@@ -206,7 +215,7 @@ if (in_array('woocommerce/woocommerce.php', (array) get_option('active_plugins')
 				} else {
 					$this->regions = array();
 				} 
-				$this->regionslist=array();
+				$this->regionslist = array();
 				foreach($this->regions as $key => $temp) {
 					$this->regionslist[$key]=$temp['name'];
 				}

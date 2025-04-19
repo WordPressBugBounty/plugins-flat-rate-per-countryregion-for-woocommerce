@@ -4,7 +4,7 @@ Tags: woocommerce, shipping, delivery, ecommerce
 Requires at least: 5.4
 Tested up to: 6.8
 Requires PHP: 7.0
-Stable tag: 3.0
+Stable tag: 3.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -90,6 +90,9 @@ If you reach us by email or any other direct contact means, we’ll assume you n
 You can report any security bugs found in the source code of this plugin through the [Patchstack Vulnerability Disclosure Program](https://patchstack.com/database/vdp/flat-rate-per-countryregion-for-woocommerce). The Patchstack team will assist you with verification, CVE assignment and take care of notifying the developers of this plugin.
 
 == Changelog ==
+
+= 3.1 - 2025-04-18 =
+* [FIX] Creation of dynamic property PHP Deprecated notices
 
 = 3.0 - 2025-04-18 =
 * [NEW] We are now called Naked Cat Plugins 😻
