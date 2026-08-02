@@ -4,7 +4,7 @@ Tags: woocommerce, shipping, delivery, ecommerce
 Requires at least: 5.4
 Tested up to: 6.8
 Requires PHP: 7.0
-Stable tag: 3.1
+Stable tag: 3.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -83,13 +83,16 @@ This is a free plugin. It’s our way of giving back to the wonderful WordPress 
 
 There’s a support tab on the top of this page, where you can ask the community for help. We’ll try to keep an eye on the forums but we cannot promise to answer support tickets.
 
-If you reach us by email or any other direct contact means, we’ll assume you need, premium, and of course, paid-for support.
+If you reach us by email or any other direct contact method, we’ll assume you need premium, paid-for support.
 
 = Where do I report security vulnerabilities found in this plugin? =  
  
 You can report any security bugs found in the source code of this plugin through the [Patchstack Vulnerability Disclosure Program](https://patchstack.com/database/vdp/flat-rate-per-countryregion-for-woocommerce). The Patchstack team will assist you with verification, CVE assignment and take care of notifying the developers of this plugin.
 
 == Changelog ==
+
+= 3.2 - 2026-08-02 =
+* [FIX] Per-State "free shipping if at least one item is in a chosen shipping class" rule was incorrectly checking the Country rule's class list instead of its own, causing wrong shipping costs on stores using this combination
 
 = 3.1 - 2025-04-18 =
 * [FIX] Creation of dynamic property PHP Deprecated notices

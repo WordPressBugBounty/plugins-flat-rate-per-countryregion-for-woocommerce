@@ -3,7 +3,7 @@
  * Plugin Name:       Flat Rate per State/Country/Region for WooCommerce
  * Plugin URI:        https://www.webdados.pt/wordpress/plugins/flat-rate-per-countryregion-woocommerce-wordpress/
  * Description:       This plugin allows you to set a flat delivery rate per States, Countries or World Regions (and a fallback "Rest of the World" rate) on WooCommerce.
- * Version:           3.1
+ * Version:           3.2
  * Author:            Naked Cat Plugins (by Webdados)
  * Author URI:        https://nakedcatplugins.com
  * Text Domain:       flat-rate-per-countryregion-for-woocommerce
@@ -814,7 +814,7 @@ if (in_array('woocommerce/woocommerce.php', (array) get_option('active_plugins')
 				<div id="wc_flatrate_wd">
 					<div id="wc_flatrate_wd_rightbar">
 						<h4><?php _e('Premium plugins', 'flat-rate-per-countryregion-for-woocommerce'); ?>:</h4>
-						<p><a href="https://nakedcatplugins.com" title="<?php echo esc_attr(sprintf(__('Please contact %s', 'flat-rate-per-countryregion-for-woocommerce'), 'PT Woo Plugins')); ?>" target="_blank"><img src="<?php echo plugins_url('images/nakedcatplugins-plugins-for-wordpress.svg', __FILE__); ?>" width="200"/></a></p>
+						<p><a href="https://nakedcatplugins.com" title="<?php echo esc_attr(sprintf(__('Please contact %s', 'flat-rate-per-countryregion-for-woocommerce'), 'Naked Cat Plugins')); ?>" target="_blank"><img src="<?php echo plugins_url('images/nakedcatplugins-plugins-for-wordpress.svg', __FILE__); ?>" width="200"/></a></p>
 						<h4><?php _e('Premium technical support or custom WordPress / WooCommerce development', 'flat-rate-per-countryregion-for-woocommerce'); ?>:</h4>
 						<p><a href="https://www.webdados.pt/contactos/" title="<?php echo esc_attr(sprintf(__('Please contact %s', 'flat-rate-per-countryregion-for-woocommerce'), 'Webdados')); ?>" target="_blank"><img src="<?php echo plugins_url('images/webdados.svg', __FILE__); ?>" width="200"/></a></p>
 						<h4><?php _e('Free technical support (limited)', 'flat-rate-per-countryregion-for-woocommerce'); ?>:</h4>
@@ -1043,7 +1043,7 @@ if (in_array('woocommerce/woocommerce.php', (array) get_option('active_plugins')
 														default:
 															foreach ($this->find_shipping_classes($package) as $shipping_class => $items) {
 																if (trim($shipping_class)!='') {
-																	if (in_array($shipping_class, $this->settings['pc_'.$i.'_fr_class'])) {
+																	if (in_array($shipping_class, $this->settings['ps_'.$i.'_fr_class'])) {
 																		$final_rate=0; //Free
 																		break;
 																	}
